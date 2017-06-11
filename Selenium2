@@ -1,0 +1,23 @@
+
+    selenium自动化测试浏览器，它主要是用于 Web 应用程序的自动化测试，但肯定不只局限于此，同时支持所有基于 web 的管理任务自动化。
+    
+    selenium RC 是 selenium 家族的核心工具，selenium RC 支持多种不同的语言编写自动化测试脚本，通过 selenium RC 的服务器作为
+代理服务器去访问应用从而达到测试的目的。使用分 Client Libraries 和 selenium Server，Client Libraries 库主要主要用于编写测试脚本，
+用来控制 selenium Server 的库。
+
+Selenium Server 负责控制浏览器行为，总的来说，Selenium Server 主要包括 3 个部分：Launcher、Http Proxy、 Core。 
+其中 Selenium Core 是被 Selenium Server 嵌入到浏览器页面中的，是一堆 JS 函数的集合，就是通过这些 JS 函数，我们才可以实现用程序
+对浏览器进行操作。
+Launcher 用于启动浏览器，把 selnium Core 加载到浏览器页面当中，并把浏览器的代理设置为 Selenium Server 的Http Proxy。
+
+selenium 2.0 = selenium 1.0 + WebDriver
+在 selenium 2.0 中主推的是 WebDriver ，WebDriver 是 selenium RC 的替代品，具有向下兼容性。那么两者有什么区别呢？
+
+selenium RC 在浏览器中运行 JavaScript 应用，使用浏览器内置的 JavaScript 翻译器来翻译和执行selenese 命令
+（selenese 是 selenium 命令集合） 。
+WebDriver 直接控制浏览器（通过原生浏览器支持，不再向浏览器嵌入JavaScript）。与浏览器的紧密集成支持创建更高级的测试，避免了
+JavaScript 安全模型导致的限制。除了来自浏览器厂商的支持，WebDriver 还利用操作系统级的调用模拟用户输入。
+
+
+
+ 
